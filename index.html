@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="script.js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Jubilación - Argentina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏛️ Calculadora de Jubilación</h1>
+        <h2>Argentina</h2>
+        
+        <div class="calculator">
+            <form id="jubilacionForm">
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="0" max="120" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Género:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="mujer" name="genero" value="mujer" required>
+                        <label for="mujer">Mujer</label>
+                        
+                        <input type="radio" id="hombre" name="genero" value="hombre">
+                        <label for="hombre">Hombre</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-calcular">Calcular Elegibilidad</button>
+            </form>
+            
+            <div id="resultado" class="resultado"></div>
+        </div>
+        
+        <div class="info">
+            <h3>📋 Requisitos de Jubilación en Argentina:</h3>
+            <ul>
+                <li><strong>Mujeres:</strong> 60 años</li>
+                <li><strong>Hombres:</strong> 65 años</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
